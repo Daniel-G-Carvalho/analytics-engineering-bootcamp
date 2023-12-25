@@ -37,3 +37,13 @@ models:
       +enabled: true
       +materialized: table
       +schema: stg_northwing
+    warehouse:
+      +enabled: true
+      +materialized: table
+      +schema: dw_northwing
+      dim_date:
+        +materialized: view
+    analytics_obt:
+      +enabled: true
+      +materialized: table
+      +schema: obt_northwing
